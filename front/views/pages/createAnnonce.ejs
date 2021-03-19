@@ -1,0 +1,61 @@
+<%- include('../partials/head') %>
+
+<%- include('../partials/header') %>
+
+<%- include('../partials/nav') %>
+
+<h1>Ajouter une annonce</h1>
+
+<form>
+
+    <fieldset class="propriete">
+
+        <div>
+            <label for="titre">Titre:</label>
+            <input type="text" id="titre" placeholder="Ancienne ecole" required>
+        </div>
+
+        <div>
+            <label for="description">Description:</label>
+            <input type="text" id="description" placeholder="refait a neuf, piscine">
+        </div>
+
+    </fieldset>
+
+    <fieldset class="lieu">
+
+        <h3>Lieu</h3>
+
+        <div>
+            <label for="adresse">Adresse:</label>
+            <input type="text" id="adresse" placeholder="25, rue Claude Tillier" required>
+        </div>
+
+        <div>
+            <label for="code_postal">Code postal:</label>
+            <input type="number" id="code_postal" placeholder="75012" required>
+        </div>
+
+        <div>
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" placeholder="Paris" required>
+        </div>
+
+    </fieldset>
+
+    <fieldset class="prix">
+
+        <div>
+            <label for="prix">Prix :</label>
+            <input type="number" id="prix" min="0" required> €
+        </div>
+
+    </fieldset>
+
+    <div>
+        <button type="submit" onclick="createAnnonce()">Créer</button>
+    </div>
+
+</form>
+
+<%- include('../partials/footer') %>

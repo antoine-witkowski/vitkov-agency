@@ -1,0 +1,48 @@
+<%- include('../partials/head') %>
+
+<%- include('../partials/header') %>
+
+<%- include('../partials/nav') %>
+
+<section class="resume">
+    <h2>
+        <%= annonce.titre %> - <%= annonce.ville %> ( <%= annonce.code_postal %> )
+    </h2>
+</section>
+
+<section class="description">
+    <div>Description:</div>
+    <div>
+        <%= annonce.description %>.
+    </div>
+</section>
+
+<br>
+
+<section class="prix">
+    <div>Prix:</div>
+    <div>
+        <%= annonce.prix %> €
+    </div>
+</section>
+
+<br>
+
+<section class="adresse">
+    <div>Adresse complete:</div>
+    <div>
+        <%= annonce.adresse %>, <%= annonce.ville %>
+    </div>
+</section>
+
+<section>
+    <div>
+        <a class="boutton" href="http://localhost:4000/update/annonce/<%= annonce._id %>">Mettre à jour</a>
+    </div>
+    <div>
+        <button type="button" onclick="deleteAnnonce('<%= annonce._id %>')">Supprimer</button>
+    </div>
+</section>
+
+<%- include('../partials/footer') %>
+

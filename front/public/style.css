@@ -1,0 +1,23 @@
+h1 {
+    color: cornflowerblue;
+}
+
+button, .boutton {
+    display: inline-block;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    background-color: slategray;
+}
+
+button:hover, .boutton:hover {
+    background-color: cornflowerblue;
+}
+
+footer {
+    color: cornflowerblue;
+}
